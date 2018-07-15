@@ -2,6 +2,8 @@
  * This program should iterate through every element and apply some configured set of rules
  *
  * TODO: Have defined rules be a parsed JSON?
+ * 
+ * ^ Change `getWarm` and `isCool` to more relevantly named methods so rules/template make sense?
  */
 
 // An array with color-related styles
@@ -30,6 +32,7 @@ const isHidden = (element) => {
 	return element.offsetParent === null;
 };
 
+// TODO: Complete
 // Returns whether a color is cool
 const isCool = (color) => {
 	// The format should be something like "rgb(X, Y, Z)"
@@ -39,6 +42,7 @@ const isCool = (color) => {
 	return true;
 }
 
+// TODO: Complete
 const getWarm = (color) => {
 	// Precondition: Provided color is *not* a warm color
 	// Returns warm version of color
